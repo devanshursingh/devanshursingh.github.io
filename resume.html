@@ -5,24 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resume – Devanshu Singh</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @media print { a { color: inherit; text-decoration: none; } }
+  </style>
 </head>
 <body class="bg-white text-black font-sans leading-relaxed p-6">
   <div class="max-w-3xl mx-auto">
-    <h1 class="text-3xl font-bold mb-2">Devanshu Singh</h1>
-    <p class="mb-4 text-lg">
-      <a href="mailto:dsingh33@alumni.jh.edu" class="text-blue-600 hover:underline">dsingh33@alumni.jh.edu</a> |
-      <a href="https://linkedin.com/in/dsingh33" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/dsingh33</a>
-    </p>
+    <!-- Header -->
+    <header class="mb-4">
+      <h1 class="text-3xl font-bold">Devanshu Singh</h1>
+      <p class="text-lg">
+        <a href="mailto:dsingh33@alumni.jh.edu" class="text-blue-600 hover:underline">dsingh33@alumni.jh.edu</a>
+        <span class="mx-1">|</span>
+        <span>(310) 904-9357</span>
+        <span class="mx-1">|</span>
+        <a href="https://linkedin.com/in/dsingh33" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/dsingh33</a>
+      </p>
+    </header>
 
     <!-- Education -->
     <section class="mb-6">
       <h2 class="text-xl font-semibold mb-2">Education</h2>
       <ul class="space-y-2">
-        <li><strong>University of Washington</strong> – PhD Candidate, Political Science (Expected 2029)</li>
-        <li><strong>Johns Hopkins University</strong> – MSE, Data Science (May 2022), Major GPA: 3.6</li>
-        <li><strong>Johns Hopkins University</strong> – BA, Technology and Politics (May 2020), Major GPA: 3.9</li>
-        <li><strong>Johns Hopkins University</strong> – BS, Applied Math and Statistics (May 2020), Major GPA: 3.3</li>
-        <li><em>Relevant Coursework:</em> Machine Learning, Data Mining, Political Theory, Statistics</li>
+        <li>
+          <strong>Johns Hopkins University</strong> — MSE, Data Science (05/2022), GPA: 3.6
+          <div class="text-sm text-gray-700">Concentration in Language and Speech</div>
+        </li>
+        <li>
+          <strong>Johns Hopkins University</strong> — BS, Applied Mathematics and Statistics (05/2020), GPA: 3.4
+          <div class="text-sm text-gray-700">Double Major: BA, Interdisciplinary Studies</div>
+          <div class="text-sm text-gray-700">Relevant Coursework: Machine Learning, Data Mining, Introduction to Statistics, Natural Language Processing, Vision as Bayesian Inference, Deep Learning, Introduction to Nonlinear Optimization</div>
+          <div class="text-sm text-gray-700">Certifications: UCLA HIPAA Certification; All of Us Data Certification</div>
+        </li>
+        <li>
+          <strong>University of Washington</strong> — PhD Candidate, Political Science (09/2024 – Present)
+        </li>
       </ul>
     </section>
 
@@ -31,47 +48,60 @@
       <h2 class="text-xl font-semibold mb-2">Experience</h2>
 
       <div class="mb-4">
-        <strong>PhD Student and Teaching Assistant</strong><br>
-        University of Washington | Sep 2024 – Present | Seattle, WA
+        <strong>Biostatistics Volunteer</strong><br>
+        UCLA | Los Angeles, CA | Jul 2025 – Present
         <ul class="list-disc list-inside ml-4">
-          <li>Teaching sections in political science classes focused on writing assignments</li>
-          <li>Studying technology and political theory focused on AI governance</li>
+          <li>Performed multivariate regression analysis with Python and Stata on CDC WONDER mortality data.</li>
+          <li>Produced 2 tables of annual predicted trends for lung cancer mortality for a co-authored manuscript in preparation.</li>
+        </ul>
+      </div>
+
+      <div class="mb-4">
+        <strong>Teaching Assistant</strong><br>
+        University of Washington | Seattle, WA | Sep 2024 – Present
+        <ul class="list-disc list-inside ml-4">
+          <li>Led discussion sections (~30 students) for political science courses with intensive writing components.</li>
+          <li>Researched emerging technology and AI governance; co-authored political science article published in <em>Isonomia Quarterly</em>.</li>
         </ul>
       </div>
 
       <div class="mb-4">
         <strong>Data Analyst</strong><br>
-        Center for Advanced Defense Studies (C4ADS) | Jan 2023 – Jul 2024 | Washington, DC
+        Center for Advanced Defense Studies (C4ADS) | Washington, DC | Jan 2023 – Jul 2024
         <ul class="list-disc list-inside ml-4">
-          <li>Scraped 10+ TB of data from geopolitically relevant public sources using Python</li>
-          <li>Structured unstructured CSV data into searchable knowledge graphs of political and financial entities</li>
+          <li>Built ETL pipelines to scrape and ingest text data, collecting 10+ TB of trade, corporate, shipping, and other records for PAI/OSINT investigations.</li>
+          <li>Created pipelines for entity extraction, resolution, and data modeling of PEPs, shell companies, sanctions lists, and other compliance-related entities.</li>
+          <li>Owned data governance standards: documented lineage/metadata, integrated multiple data streams, and standardized data models.</li>
+          <li>Developed RAG prototypes for unstructured corporate records (LangChain, LlamaIndex, OpenAI).</li>
+        </ul>
+      </div>
+
+      <!-- Keep original JHU Political Science RA block per user request -->
+      <div class="mb-4">
+        <strong>Research Assistant</strong><br>
+        Johns Hopkins University Dept. of Political Science | Jan – Dec 2022 | Baltimore, MD
+        <ul class="list-disc list-inside ml-4">
+          <li>Co-authored papers and chapters on the impact of AI/internet on democracy, presented at ISA-NE.</li>
+          <li>Raised $2,000 in research funding from interested parties.</li>
         </ul>
       </div>
 
       <div class="mb-4">
         <strong>Research Assistant</strong><br>
-        Johns Hopkins University Dept. of Political Science | Jan – Dec 2022 | Baltimore, MD
+        Neurosymbolic Computation Lab, Johns Hopkins University | Baltimore, MD | May 2021 – May 2022
         <ul class="list-disc list-inside ml-4">
-          <li>Co-authored papers and chapters on the impact of AI/internet on democracy, presented at ISA-NE</li>
-          <li>Raised $2,000 in research funding from interested parties</li>
+          <li>Designed and trained custom Transformer architecture with PyTorch for computational linguistics research.</li>
+          <li>Scaled model size and data to 10+ GB using parallel processing on GPU clusters.</li>
         </ul>
       </div>
 
       <div class="mb-4">
-        <strong>Machine Learning Research Assistant</strong><br>
-        Neurosymbolic Computation Lab JHU | May 2021 – May 2022 | Baltimore, MD
+        <strong>Product Manager</strong><br>
+        Mindgram.ai | Washington, DC | May 2021 – Aug 2021
         <ul class="list-disc list-inside ml-4">
-          <li>Trained custom Transformer architecture on 10 GB of text data</li>
-          <li>Scaled up data-processing pipeline and Transformer training to >10 GB of data using parallel processing on GPU clusters</li>
-        </ul>
-      </div>
-
-      <div class="mb-4">
-        <strong>Data Science Research Assistant</strong><br>
-        JHU Dept. of Sociology | Jun – Aug 2019 | Baltimore, MD
-        <ul class="list-disc list-inside ml-4">
-          <li>Built real-time audio pipeline from police scanners</li>
-          <li>Trained/deployed neural classifiers to detect 50+ police comms keywords</li>
+          <li>Built a custom annotated corpus of medical documents with Prodigy (1k+ labeled examples of disease and clinical entities) for NER and relation extraction.</li>
+          <li>Fine-tuned a pre-trained transformer model to ~90% accuracy converting unstructured clinical docs into structured data.</li>
+          <li>Directed an engineering intern and led deployment of the NLP pipeline into production to enable scalable text mining and market access insights.</li>
         </ul>
       </div>
     </section>
@@ -79,12 +109,24 @@
     <!-- Skills -->
     <section class="mb-6">
       <h2 class="text-xl font-semibold mb-2">Skills</h2>
-      <ul class="list-disc list-inside ml-4">
-        <li><strong>Technical:</strong> Python (Pandas, NumPy, PyTorch, Hugging Face), R (Tidyverse, Keras), SQL, SPARQL, Git, AWS, GCP, webscraping (scrapy, BeautifulSoup)</li>
-        <li><strong>Languages:</strong> English (fluent), Hindi (fluent), Spanish (beginner)</li>
+      <ul class="list-disc list-inside ml-4 space-y-1">
+        <li><strong>Technical:</strong> Python (Pandas, NumPy, PySpark, PyTorch, LangChain, LlamaIndex), R (tidyverse), SQL, AWS, Databricks, Spark, Docker, EHR management (NextGen)</li>
+        <li><strong>Governance &amp; Compliance:</strong> Data lineage, bias &amp; fairness evaluation, HIPAA compliance, audit-ready pipelines</li>
+        <li><strong>Domain Knowledge:</strong> Healthcare analytics, OSINT, political science applications of AI</li>
+        <li><strong>Languages:</strong> English (Native), Hindi (Native), Spanish (Beginner)</li>
+      </ul>
+    </section>
+
+    <!-- Publications -->
+    <section class="mb-2">
+      <h2 class="text-xl font-semibold mb-2">Publications</h2>
+      <ul class="list-disc list-inside ml-4 space-y-1">
+        <li>Perez N, Singh DR, Singh RR. “Lung Cancer Mortality, 1999–2024: Disproportionate Increase in Premature Mortality in Certain Subpopulations in the 2020s.” Manuscript in preparation.</li>
+        <li>Yen EY, Singh DR, Singh RR. “Trends in Systemic Sclerosis Mortality Over Forty-Eight Years, 1968–2015: A US Population-Based Study.” <em>Arthritis Care &amp; Research</em> 73 (2021): 1502–1510. doi:10.1002/acr.24411.</li>
+        <li>Singh RR, Singh DR, Yen EY. “Worsening premature death burden gap from systemic sclerosis in men and black persons: A US nationwide population-based study.” <em>J Scleroderma Relat Disord</em>. 2023;8(1):20–26. doi:10.1177/23971983221140538. PMCID: PMC9896199.</li>
+        <li>Deudney D, Singh D. “Bounding Power: The Artificial Superintelligence Control Problem, Public Safety, and Republican Constitutionalism.” <em>Isonomia Quarterly</em>. <a class="text-blue-600 hover:underline" target="_blank" href="https://isonomiaquarterly.com/archive/volume-2-issue-1/bounding-power-the-asi-control-problem-public-safety-and-republican-constitutionalism/">Link</a>.</li>
       </ul>
     </section>
   </div>
 </body>
 </html>
-
